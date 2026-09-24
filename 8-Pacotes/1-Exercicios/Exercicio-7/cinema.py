@@ -22,6 +22,7 @@ retorno na variável preco e soma esse valor ao total.
 
 * Fora do laço, imprime o valor total que o grupo deve pagar.
 '''
+
 def calc_bilhete(idade):
     if idade < 12:
         return 10

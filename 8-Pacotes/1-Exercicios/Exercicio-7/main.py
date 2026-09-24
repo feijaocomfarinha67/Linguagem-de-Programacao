@@ -6,13 +6,13 @@ preco = 0
 
 while idade != 0:
 
-    idade =int(input("Digite a sua idade: "))
+    idade = int(input("Digite a sua idade (0 para sair): "))
 
-    if idade == 0:
-        break
+    if idade > 0: 
+        preco = calc_bilhete(idade)
+        print("Total a pagar: ", preco)
+        variavel_total += preco
     else:
-        preco = calc_bilhete(idade) 
-        
-        
+        break
     
-print=(variavel_total)    
+print("Caixa do dia: ", variavel_total)

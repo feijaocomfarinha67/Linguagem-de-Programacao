@@ -9,8 +9,9 @@ Crie um segundo arquivo chamado main.py na mesma pasta. Importe a função verif
 No programa principal, pergunte ao aluno quantos dias de atraso ele tem nas devoluções (lembre-se 
 de converter para número inteiro). Envie esse valor para a função e exiba a resposta.
 '''
+
 def verificar_atraso(dias):
     if dias > 0:
-        print("Empréstimo bloqueado! Devolva o equipamento pendente.")
+        print("Emprésitmo bloqueado! Devolva o equipamento pendente.")
     else:
-        print("Empréstimo liberado! Pode retirar novo equipamento.")
+        print("Empréstimo liberado! Pode retirar novo equipamento")

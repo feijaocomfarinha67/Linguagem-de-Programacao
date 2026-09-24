@@ -1,6 +1,8 @@
 import pyfiglet
+from colorama import Fore, Back, Style, init
 
-# Criando o texto estilizado
-texto_arte = pyfiglet.figlet_format("Turma 202 !", font="slant")
+init()
 
-print(texto_arte)
+texto_arte = pyfiglet.figlet_format("Turma 202!", font="slant")
+
+print(Fore.BLUE + texto_arte)

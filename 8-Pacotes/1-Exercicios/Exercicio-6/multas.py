@@ -11,10 +11,13 @@
 
 3. Crie o arquivo main.py. Importe a função. Solicite ao usuário que digite qual é o limite da avenida e, em seguida, qual foi a velocidade registrada. Envie os dois valores para a função e mostre o resultado final.
 '''
+
 def calcular_infração(limite_via, velocidade_carro):
     if velocidade_carro <= limite_via:
         print("Boa viagem! Dentro do limite.")
-    elif velocidade_carro >= limite_via and velocidade_carro <= limite_via +20:
+    elif velocidade_carro > limite_via and velocidade_carro <= limite_via + 20:
         print("Infração Média! Multa de R$ 130,16.")
     elif velocidade_carro > limite_via + 20:
         print("Infração Gravíssima! Multa de R$ 880,41 e suspensão da CNH.")
+    else:
+        print("Erro! Número negativo.")
